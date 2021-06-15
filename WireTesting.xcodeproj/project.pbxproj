@@ -128,6 +128,7 @@
 		A9473797265D1D9100BC0089 /* WireSystem.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WireSystem.xcframework; path = Carthage/Build/WireSystem.xcframework; sourceTree = "<group>"; };
 		A94A9A22265D40280049F3F6 /* OCMock.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMock.xcframework; path = Carthage/Build/OCMock.xcframework; sourceTree = "<group>"; };
 		A971FAE023D7477200AB25B4 /* ZMTBaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZMTBaseTest.swift; sourceTree = "<group>"; };
+		A9AA29CB2678DA5500BF7D0D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		CE6B7B2B1C11ED5F00FC4C2E /* ZMMockEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMMockEntity.h; sourceTree = "<group>"; };
 		CE6B7B2C1C11ED5F00FC4C2E /* ZMMockEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZMMockEntity.m; sourceTree = "<group>"; };
 		CE6B7B2D1C11ED5F00FC4C2E /* ZMMockEntity2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMMockEntity2.h; sourceTree = "<group>"; };
@@ -161,6 +162,7 @@
 		096AD7B11B68D41D00E007A8 = {
 			isa = PBXGroup;
 			children = (
+				A9AA29CB2678DA5500BF7D0D /* Package.swift */,
 				54BD49EF1D41FA56006E29D1 /* Cartfile */,
 				54BD49F01D41FA56006E29D1 /* Cartfile.resolved */,
 				54BD49F11D41FA56006E29D1 /* README.md */,
