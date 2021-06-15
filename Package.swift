@@ -18,7 +18,7 @@ let package = Package(
         .binaryTarget(
                     name: "WireTesting",
                     url: "https://github.com/billypchan/wire-ios-testing/releases/download/23.0.17/WireTesting.xcframework.zip",
-                    checksum: "3e1e5e0e7d70aac0d19ead21c0912e8e1ad74076dc3935546d7d7d9b687a9379"),
+                    checksum: "3b923ff453dd7b1dda88a53a974b80d79f4ea81183fc10bfd5e278f7ccc58254"),
         .testTarget(
             name: "WireTesting-Tests",
             dependencies: ["WireTesting"]),
