@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ocmock",
+        "repositoryURL": "https://github.com/billypchan/ocmock",
+        "state": {
+          "branch": null,
+          "revision": "d5e745814231376fdd8ade1a75f8feec7b7d63b9",
+          "version": "3.4.3"
+        }
+      },
+      {
+        "package": "WireSystem",
+        "repositoryURL": "https://github.com/billypchan/wire-ios-system",
+        "state": {
+          "branch": null,
+          "revision": "d9b2021583e38d6e0d46f29d2d876b89170e7f9a",
+          "version": "32.0.22"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
