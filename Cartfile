@@ -1,2 +1,1 @@
 github "billypchan/ocmock" "v3.4.3"
-github "billypchan/wire-ios-system" ~> 32.0.20
