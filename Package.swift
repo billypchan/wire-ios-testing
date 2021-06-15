@@ -14,8 +14,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/billypchan/wire-ios-system", from: "32.0.21"),
         .package(
-            url: "https://github.com/billypchan/ocmock",
-            .branch: ("master")
+            url: "https://github.com/billypchan/ocmock", from: "v3.4.3_package"
          )
     ],
     targets: [
