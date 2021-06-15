@@ -40,10 +40,10 @@
 		54AFD7E61CB6986A0090E33A /* tiny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54AFD7E01CB698690090E33A /* tiny.jpg */; };
 		54AFD7E81CB699710090E33A /* ZMTTestBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54AFD7E71CB699710090E33A /* ZMTTestBaseTests.swift */; };
 		87B0EF5C2139687500CE1931 /* ManagedObjectContextChangesMerger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B0EF5B2139687500CE1931 /* ManagedObjectContextChangesMerger.swift */; };
-		A94A9A23265D40280049F3F6 /* OCMock.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94A9A22265D40280049F3F6 /* OCMock.xcframework */; };
 		A94B2335266F9C1200D89927 /* WireTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096AD7BB1B68D41D00E007A8 /* WireTesting.framework */; };
 		A971FAE123D7477200AB25B4 /* ZMTBaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971FAE023D7477200AB25B4 /* ZMTBaseTest.swift */; };
 		A9AA29C62678D06700BF7D0D /* WireSystem in Frameworks */ = {isa = PBXBuildFile; productRef = A9AA29C52678D06700BF7D0D /* WireSystem */; };
+		A9AA29DB2678DF6900BF7D0D /* ocmock in Frameworks */ = {isa = PBXBuildFile; productRef = A9AA29DA2678DF6900BF7D0D /* ocmock */; };
 		CE6B7B301C11ED5F00FC4C2E /* ZMMockEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7B2C1C11ED5F00FC4C2E /* ZMMockEntity.m */; };
 		CE6B7B321C11ED5F00FC4C2E /* ZMMockEntity2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B7B2E1C11ED5F00FC4C2E /* ZMMockEntity2.m */; };
 		CEB8FD6A1C11E50700ED0BE5 /* ZMMockManagedObjectContextFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB8FD681C11E50700ED0BE5 /* ZMMockManagedObjectContextFactory.m */; };
@@ -121,12 +121,8 @@
 		54AFD7DF1CB698690090E33A /* not_animated.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = not_animated.gif; sourceTree = "<group>"; };
 		54AFD7E01CB698690090E33A /* tiny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tiny.jpg; sourceTree = "<group>"; };
 		54AFD7E71CB699710090E33A /* ZMTTestBaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMTTestBaseTests.swift; sourceTree = "<group>"; };
-		54BD49EF1D41FA56006E29D1 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		54BD49F01D41FA56006E29D1 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		54BD49F11D41FA56006E29D1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		87B0EF5B2139687500CE1931 /* ManagedObjectContextChangesMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectContextChangesMerger.swift; sourceTree = "<group>"; };
-		A9473797265D1D9100BC0089 /* WireSystem.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WireSystem.xcframework; path = Carthage/Build/WireSystem.xcframework; sourceTree = "<group>"; };
-		A94A9A22265D40280049F3F6 /* OCMock.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OCMock.xcframework; path = Carthage/Build/OCMock.xcframework; sourceTree = "<group>"; };
 		A971FAE023D7477200AB25B4 /* ZMTBaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZMTBaseTest.swift; sourceTree = "<group>"; };
 		A9AA29CB2678DA5500BF7D0D /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		CE6B7B2B1C11ED5F00FC4C2E /* ZMMockEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZMMockEntity.h; sourceTree = "<group>"; };
@@ -144,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9AA29C62678D06700BF7D0D /* WireSystem in Frameworks */,
-				A94A9A23265D40280049F3F6 /* OCMock.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AA29DB2678DF6900BF7D0D /* ocmock in Frameworks */,
 				A94B2335266F9C1200D89927 /* WireTesting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,8 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				A9AA29CB2678DA5500BF7D0D /* Package.swift */,
-				54BD49EF1D41FA56006E29D1 /* Cartfile */,
-				54BD49F01D41FA56006E29D1 /* Cartfile.resolved */,
 				54BD49F11D41FA56006E29D1 /* README.md */,
 				096AD7DD1B68D6BD00E007A8 /* Source */,
 				096AD7E21B68D6BD00E007A8 /* Tests */,
@@ -231,8 +225,6 @@
 		096AD7EC1B68D8DF00E007A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A94A9A22265D40280049F3F6 /* OCMock.xcframework */,
-				A9473797265D1D9100BC0089 /* WireSystem.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -375,6 +367,9 @@
 				096AD7C91B68D41D00E007A8 /* PBXTargetDependency */,
 			);
 			name = "WireTesting-Tests";
+			packageProductDependencies = (
+				A9AA29DA2678DF6900BF7D0D /* ocmock */,
+			);
 			productName = ZMTestingTests;
 			productReference = 096AD7C61B68D41D00E007A8 /* WireTesting-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -411,6 +406,7 @@
 			mainGroup = 096AD7B11B68D41D00E007A8;
 			packageReferences = (
 				A9AA29C42678D06700BF7D0D /* XCRemoteSwiftPackageReference "wire-ios-system" */,
+				A9AA29D92678DF6900BF7D0D /* XCRemoteSwiftPackageReference "ocmock" */,
 			);
 			productRefGroup = 096AD7BC1B68D41D00E007A8 /* Products */;
 			projectDirPath = "";
@@ -597,6 +593,14 @@
 				kind = branch;
 			};
 		};
+		A9AA29D92678DF6900BF7D0D /* XCRemoteSwiftPackageReference "ocmock" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/billypchan/ocmock";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -604,6 +608,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A9AA29C42678D06700BF7D0D /* XCRemoteSwiftPackageReference "wire-ios-system" */;
 			productName = WireSystem;
+		};
+		A9AA29DA2678DF6900BF7D0D /* ocmock */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9AA29D92678DF6900BF7D0D /* XCRemoteSwiftPackageReference "ocmock" */;
+			productName = ocmock;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
