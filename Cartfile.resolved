@@ -1,2 +1,2 @@
-github "billypchan/ocmock" "v3.4.3"
-github "billypchan/wire-ios-system" "33.0.8"
+github "wireapp/ocmock" "v3.4.3_xcframework"
+github "wireapp/wire-ios-system" "34.0.0"
