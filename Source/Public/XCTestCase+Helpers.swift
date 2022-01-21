@@ -18,28 +18,26 @@
 
 import Foundation
 
-public func waitForGroupsToBeEmpty(_ groups: [DispatchGroup], timeout: TimeInterval = 5) -> Bool {
-
-    let timeoutDate = Date(timeIntervalSinceNow: timeout)
-    var groupCounter = groups.count
-
-    groups.forEach { (group) in
-        group.notify(queue: DispatchQueue.main, execute: {
-            groupCounter -= 1
-        })
-    }
-
-    while (groupCounter > 0 && timeoutDate.timeIntervalSinceNow > 0) {
-        if !RunLoop.current.run(mode: .default, before: Date(timeIntervalSinceNow: 0.002)) {
-            Thread.sleep(forTimeInterval: 0.002)
+extension Array where Element == DispatchGroup {
+    
+    public func waitForGroupsToBeEmpty(timeout: TimeInterval = 5) -> Bool {
+        
+        let timeoutDate = Date(timeIntervalSinceNow: timeout)
+        var groupCounter = count
+        
+        forEach { (group) in
+            group.notify(queue: DispatchQueue.main, execute: {
+                groupCounter -= 1
+            })
         }
+        
+        while (groupCounter > 0 && timeoutDate.timeIntervalSinceNow > 0) {
+            if !RunLoop.current.run(mode: .default, before: Date(timeIntervalSinceNow: 0.002)) {
+                Thread.sleep(forTimeInterval: 0.002)
+            }
+        }
+        
+        return groupCounter == 0
     }
-
-    return groupCounter == 0
+    
 }
-
-///TODO: ext of [DispatchGroup] and DispatchGroup? 
-//extension XCTestCase {
-//    
-//
-//}
